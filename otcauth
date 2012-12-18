@@ -1,16 +1,7 @@
 #!/bin/bash
 
-# install in ~/.kde/share/apps/konversation/scripts as otcauth
-# chmod +x that file
-# enable logging such that gribble from freenode ends up in
-# ~/.kde/share/apps/konversation/logs/freenode_gribble.log
-# restart konversation
-# and then enjoy automatic auth script
-# by going /otcauth NICKNAME
-# directly from konversation
-
-# SUPPORT BITCOIN -- IF YOU FOUND THIS USEFUL
-# DONATE TO ADDRESS 15iUMQHSGNS9Aaz2Ua76M44ssPeiTz6jMi THANKS!
+# See README for instructions
+# https://github.com/Rudd-O/otcauth
 
 set -e
 
