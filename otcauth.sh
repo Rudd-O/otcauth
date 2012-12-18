@@ -16,7 +16,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 tty -s || exec konsole -e bash "$DIR"/`basename "$0"` "$@"
 
 NICK=Rudd-O
-test -z "$1" || NICK="$1"
+test -z "$3" || NICK="$3"
 
 function error() {
   echo "The script cannot find or resolve the one time pad"
