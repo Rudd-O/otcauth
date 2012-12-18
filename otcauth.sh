@@ -9,6 +9,9 @@
 # by going /otcauth NICKNAME
 # directly from konversation
 
+# SUPPORT BITCOIN -- IF YOU FOUND THIS USEFUL
+# DONATE TO ADDRESS 1FPwsMACGqCFtAxpMVHznHe7TkrHMRxB6M THANKS!
+
 set -e
 
 unset CDPATH
