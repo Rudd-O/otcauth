@@ -22,7 +22,7 @@ trap error ERR
 qdbus org.kde.konversation /irc say Freenode gribble "gpg eauth $NICK"
 echo "Waiting for reply from bot..." >> /dev/stderr
 sleep 3
-urltodecrypt=`tail "$DIR"/../logs/freenode_gribble.log | grep 'Get your encrypted OTP' | python -c 'import sys ; print sys.stdin.readlines()[-1].split()[-1].strip()'`
+urltodecrypt=`sed -n -e "s/.*Get your encrypted OTP from //p" < $HOME/logs/freenode_gribble.log | tail -1`
 texttodecrypt=`wget -qO /dev/stdout "$urltodecrypt"`
 decryptedtext=`echo "$texttodecrypt" | gpg --decrypt || true`
 qdbus org.kde.konversation /irc say Freenode gribble "gpg everify $decryptedtext"
